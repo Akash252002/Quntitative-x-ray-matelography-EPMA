@@ -22,24 +22,30 @@
         padding: 1rem 0;
     }
 
+    nav ul li {
+        display: inline;
+        margin-right: 10px;
+    }
+    
+    
     nav ul {
         list-style: none;
         padding: 0;
         margin: 0;
         background-color: #444;
-        text-align: center;
+        display: flex;
+        justify-content: center; /* Align items in the center */
+        flex-wrap: wrap; /* This ensures items move to the next line on smaller screens */
     }
-
-    nav ul li {
-        display: inline;
-        margin-right: 10px;
-    }
-
+    
+    
     nav ul li a {
         color: white;
         text-decoration: none;
-        padding: 10px 15px;
+        padding: 0px 10px;
+        display: block;
     }
+    
 
     section {
         padding: 20px;

@@ -12,24 +12,30 @@ header, footer {
     padding: 1rem 0;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    background-color: #eaecef;
-    text-align: center;
-}
-
 nav ul li {
     display: inline;
     margin-right: 10px;
 }
 
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #444;
+    display: flex;
+    justify-content: center; /* Align items in the center */
+    flex-wrap: wrap; /* This ensures items move to the next line on smaller screens */
+}
+
+
 nav ul li a {
     color: white;
     text-decoration: none;
-    padding: 10px 15px;
+    padding: 0px 10px;
+    display: block;
 }
+
 
 section {
     padding: 20px;
@@ -67,11 +73,11 @@ ul li:hover {
 }
 
 .correct {
-    background-color: lightgreen;
+    background-color: rgb(12, 137, 12);
 }
 
 .wrong {
-    background-color: lightcoral;
+    background-color: rgb(219, 48, 48);
 }
 
 .answer {
